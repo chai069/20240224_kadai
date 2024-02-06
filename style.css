@@ -1,0 +1,28 @@
+/* 背景画像の設定 */
+body{
+    background-image: url("./img/piggybank2.jpg");
+    background-size: cover;
+    }
+/* フォント設定 */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#title{
+    position: relative;
+    top: 100px;
+    font-size:  400%;
+    font-weight: bold;
+}
+#Start{
+    position: absolute;
+    bottom: 20%;
+    right: 3%;
+    font-size: 400%;
+    font-weight:bold ;
+}
+#link{
+    position: relative;
+    top: 50px;
+    font-size: 400%;
+    font-weight: bold;
+}
