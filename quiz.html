@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>クイズ</title>
+    <script type="text/javascript"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-    
+    <form action="#" method="post">
+        <p>金額を入力：<br>
+            <input id="text" type="text" value="" />
+        </p>
+        <p><input type="button" value="確認する" id="button2" onclick="addAnswer()"/></p>
+        <div id="answer"></div>
+        <div id="use"><p>このお金をどう使いますか？</p>
+        <p>A:銀行に貯金</p>
+        <p>B:お菓子を買う</p>
+        <p>C:投資してみる</p>
+        </div>
+        <!-- JavaScriptはここに記述する！ -->
+<script>
+    function addAnswer() {
+        answer = document.getElementById("answer");
+        text = document.getElementById("text");
+        answerText = text.value;
+        answer.innerText = "あなたの所持金は、" + answerText + "円です。";
+    }
+
+</script>
 </body>
 </html>
