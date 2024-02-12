@@ -6,7 +6,12 @@
     <title>application</title>
 </head>
 <body>
-    <script>
+    <!-- <div id="a1">あいうえお</div>
+    <div id="a2">かきくけこ</div>
+    <div id="a3">さしすせそ</div>
+    <button id="btn">クリック</button> -->
+    <div id="a1">1111</div>
+    <!-- <script> -->
 // alert("ABC");
 // console.log("test");
 // let name1 = "hello";
@@ -57,8 +62,54 @@
 // if(a==1 || a==10){
 //     alert("それです");
 // }
+// const r1 = Math.ceil(Math.random()*7);
+// const r2 = Math.ceil(Math.random() * 7);
+// const r3 = Math.ceil(Math.random() * 7);
+// alert(r1 + " | " + r2 + " | " + r3);
+// const r = Math.ceil(Math.random()*5);
+// let view = "";
+// if(r==1){
+//     view = "大吉";
+// }
+// if (r == 2) {
+//     view = "中吉";
+// }
+// if (r == 3) {
+//     view = "小吉";
+// }
+// if (r == 4) {
+//     view = "吉";
+// }
+// if (r == 5) {
+//     view = "凶";
+// }
+// alert(view);
+// const r = Math.random() / 10; //金利計算するのに使えそう、ランダムで数％まで表示できる
+// alert(r);
+// const a1 = document.querySelector("#a1");
+// // console.log(a1.id);
+// // console.log(a1.title);
+// // console.log(a1.innerHTML);
+// a1.style.color="#ff0000";
+// a1.style.fontSize="64px";
+// a1.innerHTML="ABCDEF";
+const btn = document.querySelector("#btn");
+btn.onclick = function(e){
+    console.log(e);
+    alert("クリックしました");
+}
 
-
-    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+// $("body").append("<div>ABC</div>");
+const link = '<a href="#">リンク</a>';
+$("#a1").text(link);
+$("#a1").css("color","#ff0000");
+$("#a1").css("backgroundColor", "#000000");
+$("#a1").fadeOut(1000).fadeIn(1000);
+$("#a1").prepend("あいうえお");
+$("#a1").append("かきくけこ");
+$("#a1").prepend("あいうえお");
+</script>
 </body>
 </html>
